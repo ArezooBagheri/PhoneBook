@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneBook.Core.ApplicationServices\PhoneBook.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\PhoneBook.Core.Domain\PhoneBook.Core.Domain.csproj" />
+    <ProjectReference Include="..\PhoneBook.Core.Resources\PhoneBook.Core.Resources.csproj" />
+    <ProjectReference Include="..\PhoneBook.Framework\PhoneBook.Framework.csproj" />
+    <ProjectReference Include="..\PhoneBook.Infrastructures.Data.SqlServer\PhoneBook.Infrastructures.Data.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>
